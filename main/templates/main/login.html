@@ -1,0 +1,22 @@
+{% extends "main/inicio.html" %}
+
+
+{% block contenido %}
+    <br>
+    <div class="container">
+        <div class="row justify-content-md-center">       
+            <h1> Inicio</h1>
+        </div>
+    </div>
+    <br><br>
+    
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <form method="POST">
+            {% csrf_token %}
+            {{form}}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% if messages %}
+    {% for mes in messages %}
+        {% if mes.tags == 'success' %}
+            <script>
+                alert("{{mes}}")
+            </script> 
+        {% elif mes.tags == "info" %}
+            <script>
+                alert("{{mes}}")
+            </script>   
+        {% endif %}
+    {% endfor %}
+{% endif %}
+

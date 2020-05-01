@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include "main/includes/head.html" %}
+<body>
+    {% include "main/includes/navbar.html" %}
+    {% include "main/includes/messages.html" %}
+    
+
+
+    <div>
+        {% block contenido %}
+        {% endblock %}
+        
+
+    {% include "main/includes/scripts.html" %}
+</body>
+</html>
